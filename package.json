@@ -1,0 +1,32 @@
+{
+  "name": "framework-opencart-playwright-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test:end-to-end": "playwright test --grep @end-to-end --headed",
+      "test:master" : "playwright test --grep @master",
+      "test:master:headed": "playwright test --grep @master --headed",
+      "test:sanity" : "playwright test --grep @sanity",
+      "test:regression" : "playwright test --grep @regression",
+      "test:datadriven" : "playwright test --grep @datadriven",
+      "test:sanity:debug" : "playwright test --grep @sanity --debug",
+      "final" : "playwright test --grep @master --workers 3 fullyparallel" 
+
+  },
+
+  "keywords": [],
+  "author": "Kash Chauhan",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "allure-playwright": "^3.4.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "csv-parse": "^6.1.0",
+    "xlsx": "^0.18.5"
+  }
+}

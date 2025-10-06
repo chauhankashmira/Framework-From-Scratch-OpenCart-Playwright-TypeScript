@@ -1,0 +1,7 @@
+Exception occurred while clicking 'My Account': Error: locator.click: Error: strict mode violation: locator('a:has-text(\'My Account\')') resolved to 2 elements:
+    1) <a title="My Account" data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/opencart/upload/index.php?route=account/account">…</a> aka getByRole('link', { name: ' My Account' })
+    2) <a href="http://localhost/opencart/upload/index.php?route=account/account">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })
+
+Call log:
+  - waiting for locator('a:has-text(\'My Account\')')
+
